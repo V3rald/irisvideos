@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <title>BRB Scene</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: black;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black; /* black bars around the video */
     }
     video {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
+      width: auto;    /* keep original width */
+      height: auto;   /* keep original height */
     }
   </style>
 </head>
 <body>
-  <video autoplay loop muted playsinline>
+  <video autoplay loop playsinline>
     <source src="song.mp4" type="video/mp4">
   </video>
 </body>
